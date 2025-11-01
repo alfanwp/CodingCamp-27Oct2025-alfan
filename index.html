@@ -4,17 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- css external file -->
     <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
-    <header></header>
 
-    <main></main>
-    
+    <!-- header content -->
+    <header>
+        <h1>TodoList Website - Alfan</h1>
+    </header>
+
+<!-- Main content -->
+    <main>
+        <!-- Form section -->
+        <section>
+            <form>
+            <!-- Todo form -->
+            <input type="text" id="todo-input" placeholder="Enter a new todo item">
+            <!-- Date input -->
+            <input type="date" id="todo-date" placeholder="Enter due date">
+        </form>
+
+        <!-- add button -->
+        <button type="submit" id="add-todo-btn" type="button" onclick="addTodo();">Add Todo</button>
+        </section>
+
+        <!-- action section -->
+        <section>
+            <!-- remove Todo -->
+            <button id="clear-todo-btn">Remove Todo</button>
+            <!-- Filter todo -->
+            <button id="filter-todo-btn">Filter Todo</button>       
+        </section>
+        <!-- TodoList Section -->
+        <section>
+            <!-- Todolist appear here -->
+            <ul id="todo-list">
+                <li>no todolist available</li>
+            </ul>
+        </section>
+        
+    </main>
+
+<!-- Footer content -->
     <footer>
         <p>&copy; 2025 Todolist Website</p>
     </footer>
-
+<!-- Javascript external file -->
     <script src="js\script.js"></script>
 </body>
 </html>
